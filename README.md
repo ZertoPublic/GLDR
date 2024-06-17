@@ -441,51 +441,61 @@ GET /disaster-recovery/v1alpha1/virtualization/csp-machine-instances?siteId={sit
 Response:
 ```
 [
-    {
-        "lastUpdatedAt": "2023-07-23T07:32:42Z",
-        "id": "5553e594-f868-5c60-8f77-d9431df1b0fb",
-        "name": "qa_s4v5_dmy_eyalgad",
-        "type": "csp-machine-instances",
-        "customerId": "fe0d3faa-ae9f-11ec-a437-ea9dc4f11500",
-        "cspId": "0c363daf-b9fd-4647-b99e-50332d1a5ba6.vm-1230",
-        "isAgentInstalled": false,
-        "protected": false,
-        "vmPerfMetricInfo": 
-            {
-               "provisionedStorageInMB": 0,
-		"usedStorageInMB": 0,
-		"numCpuCores":"integer",
-		"memorySizeInMB":"integer",
-            },
-        "virtualDisks": [
-            {
-                "id": "",
-                "internalId": "scsi:0:0"
-            },
-            {
-                "id": "",
-                "internalId": "scsi:0:1"
-            },
-            {
-                "id": "",
-                "internalId": "scsi:0:2"
-            }
-        ],
-        "networkAdapters": [
-            {
-                "networkDetails": {
-                    "id": "",
-                    "internalId": "Network adapter 1"
-                }
-            },
-            {
-                "networkDetails": {
-                    "id": "",
-                    "internalId": "Network adapter 2"
-                }
-            }
-        ]
-    }
+	{
+	  "lastUpdatedAt": "2024-06-17T07:47:31Z",
+	  "id": "0844c68a-9155-5ce6-88c9-651b92cf84a3",
+	  "name": "AzureVRA-024c1a0b-30c4-4f8b-a35c-027f4f270663",
+	  "type": "virtual-machine",
+	  "customerId": "8128e9de-02e1-11ee-8ccc-72219d4c57ef",
+	  "siteId": "a5045c11-dbd9-4440-8820-07b33893e8f1",
+	  "protected": false,
+	  "computeInfo": {
+	    "numCpuCores": 4,
+	    "memorySizeInMB": 8192
+	  },
+	  "virtualDisks": [
+	    {
+	      "id": "",
+	      "internalId": "scsi:0:0"
+	    },
+	    {
+	      "id": "",
+	      "internalId": "scsi:0:1"
+	    },
+	    {
+	      "id": "",
+	      "internalId": "scsi:0:2"
+	    }
+	  ],
+	  "networkAdapters": [
+	    {
+	      "networkDetails": {
+	        "id": "",
+	        "internalId": "nicAzureVRA-024c1a0b-30c4-4f8b-a35c-027f4f270663",
+	        "network": "/subscriptions/33eb1d36-e4d1-46c8-9e67-4053730b033c/resourceGroups/SystemRG/providers/Microsoft.Network/virtualNetworks/vNet_West_Europe/subnets/Subnet_West_Europe",
+	        "server": "00000000-0000-0000-0000-000000000000",
+	        "ipAddresses": [
+	          {
+	            "ipAddress": "10.179.54.110"
+	          }
+	        ]
+	      }
+	    }
+	  ],
+	  "guestInfo": {
+	    "type": "LINUX"
+	  },
+	  "cspId": "/subscriptions/33eb1d36-e4d1-46c8-9e67-4053730b033c/resourceGroups/zvml-tanookh-10.22.40-rg/providers/Microsoft.Compute/virtualMachines/AzureVRA-024c1a0b-30c4-4f8b-a35c-027f4f270663",
+	  "cspInfo": {
+	    "resourceGroup": "zvml-tanookh-10.22.40-rg",
+	    "machineSize": "Standard_F4s_v2"
+	  },
+	  "cspType": "AZURE",
+	  "vmPerfMetricInfo": {
+	    "provisionedStorageInMB": 41984,
+	    "usedStorageInMB": 41984
+	  }
+	}
 ]
 ```
 #### Recovery site ID as param recovery siteRefresh csp-machine-instances list
