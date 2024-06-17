@@ -97,11 +97,14 @@ Response:
         "siteId": "0e930aa7-3b47-4da2-825b-cde9e08383f4",
         "isAgentInstalled": false,
         "protected": false,
+	"guestInfo": {
+                "type": "LINUX"
+	},
         "hostInfo":
-	    {
+	{
 		"name":"string",
-		"id":"string"
-	    },
+		"internalId":"string"
+	},
         "vmPerfMetricInfo": 
             {
                 "provisionedStorageInMB": 0,
@@ -131,13 +134,30 @@ Response:
             {
                 "networkDetails": {
                     "id": "",
-                    "internalId": "Network adapter 1"
+                    "internalId": "Network adapter 1",
+                    "network": "network-11",
+		    "server": "febe58db-7262-46a1-927c-809d705dc39c",
+		    "ipAddresses": [
+			  {
+			      "ipAddress": "10.171.32.219"
+			  },
+			  {
+			      "ipAddress": "10.171.39.14"
+			  }
+                    ]
                 }
             },
             {
                 "networkDetails": {
                     "id": "",
-                    "internalId": "Network adapter 2"
+                    "internalId": "Network adapter 2",
+                    "network": "network-11",
+		    "server": "febe58db-7262-46a1-927c-809d705dc39c",
+		    "ipAddresses": [
+			  {
+			      "ipAddress": "10.171.32.165"
+			  }
+		    ]
                 }
             }
         ]
