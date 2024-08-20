@@ -1664,3 +1664,225 @@ Body:
 }
 ```
 
+## Ransomware
+#### Get list of ransomware suspected protection groups
+GET /disaster-recovery/v1beta1/ransomware-suspected-virtual-continuous-protection-groups
+
+Response:
+```
+{
+    "items":
+    [
+        {
+            "protectedSiteId": "38431570-88dc-4393-ac27-23a2b5420ecd",
+            "recoverySiteId": "08d4afa1-08a6-409d-992d-47aeae18813e",
+            "suspicionLevel": "string",
+            "createdAt": "2019-08-24T14:15:22Z",
+            "customerId": "string",
+            "generation": 0,
+            "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+            "name": "string",
+            "resourceUri": "string",
+            "type": "string",
+            "updatedAt": "2019-08-24T14:15:22Z"
+        }
+    ],
+    "count": 1,
+    "offset": 0,
+    "total": 1
+}
+```
+
+#### Get list of ransomware suspected protection groups by protected site id
+GET /disaster-recovery/v1beta1/ransomware-suspected-virtual-continuous-protection-groups?ProtectedSiteId={siteId}
+
+Response:
+```
+{
+    "items":
+    [
+        {
+            "protectedSiteId": "38431570-88dc-4393-ac27-23a2b5420ecd",
+            "recoverySiteId": "08d4afa1-08a6-409d-992d-47aeae18813e",
+            "suspicionLevel": "string",
+            "createdAt": "2019-08-24T14:15:22Z",
+            "customerId": "string",
+            "generation": 0,
+            "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+            "name": "string",
+            "resourceUri": "string",
+            "type": "string",
+            "updatedAt": "2019-08-24T14:15:22Z"
+        }
+    ],
+    "count": 1,
+    "offset": 0,
+    "total": 1
+}
+```
+
+#### Get list of ransomware suspected protection groups by protection group id
+GET /disaster-recovery/v1beta1/ransomware-suspected-virtual-continuous-protection-groups/{protectionGroupId}
+
+Response:
+```
+{
+    "items":
+    [
+        {
+            "protectedSiteId": "38431570-88dc-4393-ac27-23a2b5420ecd",
+            "recoverySiteId": "08d4afa1-08a6-409d-992d-47aeae18813e",
+            "suspicionLevel": "string",
+            "createdAt": "2019-08-24T14:15:22Z",
+            "customerId": "string",
+            "generation": 0,
+            "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+            "name": "string",
+            "resourceUri": "string",
+            "type": "string",
+            "updatedAt": "2019-08-24T14:15:22Z"
+        }
+    ],
+    "count": 1,
+    "offset": 0,
+    "total": 1
+}
+```
+
+#### Get list of ransomware suspected virtual machines
+GET /disaster-recovery/v1beta1/ransomware-suspected-virtual-continuous-protected-machines
+
+Response:
+```
+{
+    "items": [
+        {
+            "associatedProtectionGroups": [
+                "497f6eca-6276-4993-bfeb-53cbbbba6f08"
+            ],
+            "protectedSiteId": "38431570-88dc-4393-ac27-23a2b5420ecd",
+            "suspicionLevel": "string",
+            "createdAt": "2019-08-24T14:15:22Z",
+            "customerId": "string",
+            "generation": 0,
+            "id": "497f6eca-6276-4993-bfeb-53cbbbba6f08",
+            "name": "string",
+            "resourceUri": "string",
+            "type": "string",
+            "updatedAt": "2019-08-24T14:15:22Z"
+        }
+    ],
+    "count": 1,
+    "offset": 0,
+    "total": 1
+}
+```
+
+#### Get list of ransomware suspected virtual machines by protected site id
+GET /disaster-recovery/v1beta1/ransomware-suspected-virtual-continuous-protected-machines?ProtectedSiteId={siteId}
+
+Response:
+```
+{
+    "items": [
+        {
+            "associatedProtectionGroups": [
+                "497f6eca-6276-4993-bfeb-53cbbbba6f08"
+            ],
+            "protectedSiteId": "38431570-88dc-4393-ac27-23a2b5420ecd",
+            "suspicionLevel": "string",
+            "createdAt": "2019-08-24T14:15:22Z",
+            "customerId": "string",
+            "generation": 0,
+            "id": "44399430-c445-49a8-9c60-89b833525ab3",
+            "name": "string",
+            "resourceUri": "string",
+            "type": "string",
+            "updatedAt": "2019-08-24T14:15:22Z"
+        }
+    ],
+    "count": 1,
+    "offset": 0,
+    "total": 1
+}
+```
+
+#### Get list of ransomware suspected volumes
+GET /disaster-recovery/v1beta1/ransomware-suspected-virtual-continuous-protected-volumes
+
+Response:
+```
+{
+    "items": [
+        {
+            "associatedProtectionGroups": [
+                "497f6eca-6276-4993-bfeb-53cbbbba6f08"
+            ],
+            "associatedVirtualMachine": "44399430-c445-49a8-9c60-89b833525ab3",
+            "datastore": {
+                "identifier": "string",
+                "name": "string"
+            },
+            "internalId": "0a0a0934-8f46-4e2d-8e86-651af7d0878f.vm-6022.scsi:0:5",
+            "path": {
+                "filename": "string",
+                "full": "string",
+                "relative": "string"
+            },
+            "suspicionLevel": "string",
+            "volumeType": "string",
+            "createdAt": "2019-08-24T14:15:22Z",
+            "customerId": "string",
+            "generation": 0,
+            "id": "677tgcca-6211-41a3-bfeb-53crrbbaf609",
+            "name": "string",
+            "resourceUri": "string",
+            "type": "string",
+            "updatedAt": "2019-08-24T14:15:22Z"
+        }
+    ],
+    "count": 1,
+    "offset": 0,
+    "total": 1
+}
+```
+
+#### Get list of ransomware suspected volumes by protected site id
+GET /disaster-recovery/v1beta1/ransomware-suspected-virtual-continuous-protected-volumes?ProtectedSiteId={siteId}
+
+Response:
+```
+{
+    "items": [
+        {
+            "associatedProtectionGroups": [
+                "497f6eca-6276-4993-bfeb-53cbbbba6f08"
+            ],
+            "associatedVirtualMachine": "44399430-c445-49a8-9c60-89b833525ab3",
+            "datastore": {
+                "identifier": "string",
+                "name": "string"
+            },
+            "internalId": "0a0a0934-8f46-4e2d-8e86-651af7d0878f.vm-6022.scsi:0:5",
+            "path": {
+                "filename": "string",
+                "full": "string",
+                "relative": "string"
+            },
+            "suspicionLevel": "string",
+            "volumeType": "string",
+            "createdAt": "2019-08-24T14:15:22Z",
+            "customerId": "string",
+            "generation": 0,
+            "id": "677tgcca-6211-41a3-bfeb-53crrbbaf609",
+            "name": "string",
+            "resourceUri": "string",
+            "type": "string",
+            "updatedAt": "2019-08-24T14:15:22Z"
+        }
+    ],
+    "count": 1,
+    "offset": 0,
+    "total": 1
+}
+```
