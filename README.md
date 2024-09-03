@@ -1779,7 +1779,7 @@ Response:
 ```
 
 #### Get list of ransomware suspected virtual machines by protected site id
-GET /disaster-recovery/v1beta1/ransomware-suspected-virtual-continuous-protected-machines?filter=ProtectedSiteId eq {siteId}
+GET /disaster-recovery/v1beta1/ransomware-suspected-virtual-continuous-protected-machines?filter=protectedSiteId eq {siteId}
 
 Response:
 ```
@@ -1848,7 +1848,7 @@ Response:
 ```
 
 #### Get list of ransomware suspected volumes by protected site id
-GET /disaster-recovery/v1beta1/ransomware-suspected-virtual-continuous-protected-volumes?filter=ProtectedSiteId eq {siteId}
+GET /disaster-recovery/v1beta1/ransomware-suspected-virtual-continuous-protected-volumes?filter=protectedSiteId eq {siteId}
 
 Response:
 ```
